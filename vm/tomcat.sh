@@ -46,7 +46,7 @@ systemctl daemon-reload
 systemctl start tomcat
 systemctl enable tomcat
 
-git clone -b main https://github.com/hkhcoder/vprofile-project.git
+git clone -b main https://github.com/dariusbarbus/vprofile-project.git
 cd vprofile-project
 mvn install
 systemctl stop tomcat
@@ -57,5 +57,4 @@ systemctl start tomcat
 sleep 20
 systemctl stop firewalld
 systemctl disable firewalld
-#cp /vagrant/application.properties /usr/local/tomcat/webapps/ROOT/WEB-INF/classes/application.properties
 systemctl restart tomcat
